@@ -1,0 +1,103 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Medium",
+            "weight": "Bolder",
+            "text": "Activity Study",
+            "id": "Title1"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Please select the activity that bests matches what you are currently doing",
+            "wrap": true,
+            "id": "Text1"
+        },
+        {
+            "type": "Input.ChoiceSet",
+            "choices": [
+                {
+                    "title": "Using the WorkQ",
+                    "value": "Using the WorkQ"
+                },
+                {
+                    "title": "Conducting Searches",
+                    "value": "Conducting Searches"
+                },
+                {
+                    "title": "Working in the CRM",
+                    "value": "Working in the CRM"
+                },
+                {
+                    "title": "Post",
+                    "value": "Post"
+                },
+                {
+                    "title": "Filing",
+                    "value": "Filing"
+                },
+                {
+                    "title": "Email or Teams chat",
+                    "value": "Email or Teams chat"
+                },
+                {
+                    "title": "Meeting",
+                    "value": "Meeting"
+                },
+                {
+                    "title": "Team specific task",
+                    "value": "Team specific task"
+                },
+                {
+                    "title": "Drawdown activities",
+                    "value": "Drawdown activities"
+                },
+                {
+                    "title": "Breaktime",
+                    "value": "Breaktime"
+                },
+                {
+                    "title": "Team specific task",
+                    "value": "Team specific task"
+                },
+                {
+                    "title": "Other",
+                    "value": "Other"
+                }
+            ],
+            "placeholder": "Placeholder text",
+            "label": "Activity",
+            "isMultiSelect": true,
+            "style": "expanded",
+            "wrap": true,
+            "id": "Activity_choice"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Detail of Other Activity",
+            "id": "Other_text"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Please add any detail you can",
+            "id": "Comments",
+            "label": "Comments",
+            "isMultiline": true
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Submit",
+                    "id": "submit_activity",
+                    "style": "positive",
+                    "associatedInputs": "auto"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.5"
+}
